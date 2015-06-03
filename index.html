@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>County Migration Flows</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.css">
+
+    <style></style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="title-section">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+          <nav class="navbar navbar-default app-input-group">
+            <div class="container-fluid">
+
+            <h4 id="appTitle" class="navbar-text"><b>County-to-County Migration Flows Map (2008-2012)</b></h4>
+
+              <div class="collapse navbar-collapse">
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input id="countySearchInput" type="text" class="form-control" placeholder="search your county">
+                  </div>
+                </form>
+
+                <div class=" navbar-right">
+                   <ul class="nav navbar-nav">
+                      <li class="active"><a class="flow-link" id="inflow" href="#">Flows In <span class="sr-only">(current)</span></a></li>
+                      <li><a class="flow-link" id="outflow" href="#">Flows Out</a></li>
+                    </ul>        
+                </div>
+              </div>  
+            </div>
+          </nav>
+        </div>
+
+      </div>         
+    </div>
+       
+<!--       <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default active" data-active-class="success">
+          <input id="inflow" type="radio" name="options" id="option1" autocomplete="off" checked>Flows In
+        </label>
+        <label class="btn btn-default" data-active-class="success">
+          <input id="outflow" type="radio" name="options" id="option2" autocomplete="off">Flows Out
+        </label>    
+      </div> -->   
+    </div>
+
+    <div id="map-section">
+      <div id="tooltip" class="hidden">
+        <p><span id="county-label"></span></p>
+      </div>
+
+      <div id="map"></div>        
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <hr>
+        <p class="text-muted"><small>The County-to-County migration data are downloaded from <a href="https://www.census.gov/hhes/migration/data/acs/county-to-county.html" target="_blank">American Community Survey</a>. This map application is inspired by an example from <a href="http://mbostock.github.io/d3/talk/20111116/airports.html" target="_blank">bl.ocks.org</a></small></p>
+        <p class="text-muted"><small>Made by <a href="http://www.linkedin.com/pub/jinnan-zhang/23/a71/44" target="_blank">Vanni Zhang</a></small></p>
+      </div>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/d3.csv.js"></script>
+    <script src="js/d3.geo.js"></script>
+    <script src="js/d3.geom.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/map.js"></script>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47665543-1', 'tofuballs.com');
+      ga('send', 'pageview');
+
+    </script>    
+  </body>
+</html>
