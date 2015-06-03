@@ -1,0 +1,181 @@
+body {
+  padding-top: 50px;
+  font-family: sans-serif !important;
+  margin-bottom: 100px;
+}
+
+.title-section {
+  /*padding: 40px 15px;*/
+  	width: 1100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;  
+}
+
+.app-input-group {
+	/*max-width: 440px;*/
+	 /*text-align: right;*/
+}
+
+#appTitle {
+	/*padding-bottom: 10px;*/
+}
+
+.footer-container {
+	position: absolute;
+    width: 900px;
+    /*max-width: 980px;*/
+  /*padding: 0 15px;*/
+
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.footer-container .text-muted {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  top: 790px;
+  bottom: 0;
+  width: 100%;
+  /*height: 100%;*/
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  /*background-color: #f5f5f5;*/
+}
+
+#map {
+    /*top: 20px;*/
+    height: 100%;
+    width: 100%;
+    /*background-color:rgba(0, 0, 0, 0.4);*/
+    /*background: transparent;*/
+/*    padding-right: 15px;
+    padding-left: 15px;*/
+}
+
+.center {
+	/*background-color: #636363;*/
+	top: 110px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin-bottom: 60px; */
+}
+
+/*        path {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: .5px;
+}*/
+
+/*        path:hover {
+  fill: red;
+}*/
+
+path.arc {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 0.1px;
+  stroke-opacity: 0.8;
+  stroke: #000;
+  /*display: none;*/
+}
+
+.counties {
+  /*fill: #ccc;*/
+  stroke: #fff;
+  stroke-width: .3px;
+  stroke-linejoin: round;
+  stroke-linecap: round;          
+}  
+
+.counties:hover {
+  fill: #95504d;
+}              
+
+.states {
+  fill: none;
+  stroke: #707070;
+  stroke-width: 1.25px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}        
+
+#map {
+  /*position: absolute;*/
+  /*padding-top: 50px;*/
+  /*padding-right: 0px;*/
+  padding-left: 0px;
+}
+
+/*path.arc {
+pointer-events: none;
+fill: none;
+stroke: #000;
+display: none;
+}
+
+path.cell {
+fill: none;
+pointer-events: all;
+}
+
+#cells g:hover path.arc {
+display: inherit;
+}   */   
+
+/*        circle {
+  fill: steelblue;
+  fill-opacity: .5;
+  stroke: #fff;
+  stroke-width: 0px;
+}  */
+
+.btn.active[data-active-class="success"] {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}   
+
+#tooltip {
+	-moz-transition: all 0.15s;
+	-o-transition: all 0.15s;
+	-webkit-transition: all 0.15s;
+	transition: all 0.15s;
+	opacity: 0.85;
+	position: absolute;
+	min-width: 60px;
+	height: auto;
+	padding: 10px;
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	z-index: 9999;
+}
+
+#tooltip.hidden {
+display: none;
+}
+
+#tooltip p {
+margin: 0;
+font-family: sans-serif;
+font-size: 12px;
+line-height: 16px;
+}
+
