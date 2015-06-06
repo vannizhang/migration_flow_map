@@ -6,4 +6,4 @@ Users can use it to find out where people in a specific county are moving from/t
 
 D3.js and Node.js are used for this app.
 
-You can check out this map on [here](http://vannizhang.github.io/migration_flow_map/)
+You can check out this map on [here](http://vannizhang.github.io/migration_flow_map/).
