@@ -110,7 +110,7 @@ var getFlows = function(d){
     selectedCounty = countiesLookup[targetCounty].NAME + " County, " + countiesLookup[targetCounty].STATE_NAME;
     migrationFlowsData = {"inflow":{}, "outflow":{}};
 
-    $.get('http://api.plattekloof.co/getCountyMigrationFlows', { fips: targetCounty  }, function(d){
+    $.get('https://api.plattekloof.co/getCountyMigrationFlows', { fips: targetCounty  }, function(d){
         // console.log(d);
       })
       .done(function(d) {
