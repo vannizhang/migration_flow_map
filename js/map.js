@@ -110,7 +110,7 @@ var getFlows = function(d){
     selectedCounty = countiesLookup[targetCounty].NAME + " County, " + countiesLookup[targetCounty].STATE_NAME;
     migrationFlowsData = {"inflow":{}, "outflow":{}};
 
-    $.get('https://api.plattekloof.co/getCountyMigrationFlows', { fips: targetCounty  }, function(d){
+    $.get('https://api.vannizhang.com/getCountyMigrationFlows', { fips: targetCounty  }, function(d){
         // console.log(d);
       })
       .done(function(d) {
@@ -186,7 +186,7 @@ var displayFlows = function(d){
             .enter().append("svg:path")
             .attr("class", "arc")
             .attr("d", function(d) { 
-              // console.log(d);
+              console.log(d);
               return path(arc(d)); 
             });         
     } else {
