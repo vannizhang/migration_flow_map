@@ -110,9 +110,7 @@ var getFlows = function(d){
     selectedCounty = countiesLookup[targetCounty].NAME + " County, " + countiesLookup[targetCounty].STATE_NAME;
     migrationFlowsData = {"inflow":{}, "outflow":{}};
 
-    $.get('https://api.vannizhang.com/getCountyMigrationFlows', { fips: targetCounty  }, function(d){
-        // console.log(d);
-      })
+    $.get('./static/' + targetCounty + '.json')
       .done(function(d) {
         for (var i = d.features.length - 1; i >= 0; i--) {
             //convert the array with county migration flows data into an object (migrationFlowsData)
