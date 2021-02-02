@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":null,"properties":{"flowtype":"inflow","origin":"48443","counties":["48043:56","48141:37","48465:29"]}},{"type":"Feature","geometry":null,"properties":{"flowtype":"outflow","origin":"48443","counties":["48243:5"]}}]}
